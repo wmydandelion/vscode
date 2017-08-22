@@ -18,7 +18,7 @@
     <script src="./angular/angularjs.js"></script>
     <script>
         var myApp = angular.module('myApp', [])
-            ..directive('customTags', function() {
+            .directive('customTags', function() {
                 return {
                     restrict: 'ECAM',
                     template: '<div>新数据 <span ng-transclude></span></div>',
