@@ -5,7 +5,7 @@ let Hello = React.createClass({
     render() {
         return ( <
             div className = "hello-component" >
-            Hello, React <
+            Hello, Reactwwwww <
             /div>
         );
     }
