@@ -9,7 +9,7 @@
 6 silly lifecycle react-music-player@1.0.0~prestart: no script for prestart, continuing
 7 info lifecycle react-music-player@1.0.0~start: react-music-player@1.0.0
 8 verbose lifecycle react-music-player@1.0.0~start: unsafe-perm in lifecycle true
-9 verbose lifecycle react-music-player@1.0.0~start: PATH: C:\Program Files\nodejs\node_modules\npm\bin\node-gyp-bin;D:\code\vscode\react-music-player\node_modules\.bin;C:\Program Files\PHP\v5.3;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Java\jdk1.8.0_74\bin;C:\Program Files\nodejs\;C:\Ruby23-x64\bin;C:\Users\wmy\AppData\Local\Microsoft\WindowsApps;C:\Users\wmy\AppData\Roaming\npm;C:\Program Files\Git\cmd;E:\Microsoft VS Code\bin
+9 verbose lifecycle react-music-player@1.0.0~start: PATH: C:\Program Files\nodejs\node_modules\npm\bin\node-gyp-bin;D:\code\vscode\react-music-player\node_modules\.bin;C:\Program Files\PHP\v5.3;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Java\jdk1.8.0_74\bin;C:\Program Files\nodejs\;C:\Ruby23-x64\bin;C:\Users\wmy\AppData\Local\Microsoft\WindowsApps;C:\Users\wmy\AppData\Roaming\npm;C:\Program Files\Git\cmd;C:\Ruby23-x64\bin;C:\Users\wmy\AppData\Local\Microsoft\WindowsApps;C:\Users\wmy\AppData\Roaming\npm;E:\Microsoft VS Code\bin
 10 verbose lifecycle react-music-player@1.0.0~start: CWD: D:\code\vscode\react-music-player
 11 silly lifecycle react-music-player@1.0.0~start: Args: [ '/d /s /c', 'node server.js' ]
 12 silly lifecycle react-music-player@1.0.0~start: Returned: code: 1  signal: null
