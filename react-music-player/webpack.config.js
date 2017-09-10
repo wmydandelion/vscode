@@ -34,6 +34,22 @@ module.exports = {
             extensions: ['', '.js', '.json']
         },
         loaders: [{
+                test: /\.jsx?$/,
+                exclude: /node_modules/, //屏蔽不需要处理的文件（文件夹）（可选）
+                loader: 'babel-loader'
+                    //npm install babel-loader 
+                    //npm install babel-core
+            }, {
+                test: /\.css$/,
+                loader: 'style-loader!css-loader'
+            }, {
+                test: /\.less$/,
+                loader: 'style-loader!css-loader!less-loader'
+            }, {
+                test: /\.(png|jpg)$/,
+                loader: 'url-loader?limit=25000'
+            },
+            {
                 test: /\.js$/,
                 exclude: /node_modules/,
                 loader: "babel-loader",
@@ -44,10 +60,6 @@ module.exports = {
             {
                 test: /\.json?$/,
                 loader: 'json'
-            },
-            {
-                test: /\.css$/,
-                loader: "style!css"
             },
             {
                 test: /\.less$/,
