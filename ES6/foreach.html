@@ -12,10 +12,14 @@
 
     <script>
         if (typeof Array.prototype.forEach != 'function') {
-            Array.prototype.forEach = function() {
-
-            }
-        };
+            Array.prototype.forEach = function(fn, context) {
+                for (var k = 0, length = this.length; k < length; k++) {
+                    if (typeof fn === "function" && Object.prototype.hasOwnProperty.call(this, k)) {
+                        fn.call(context, this[k], k, this);
+                    }
+                }
+            };
+        }
         var arr = [1, 2, 3, 4];
         for (var k = 0, length = arr.length; k < length; k++) {
             console.log(arr[k]);
