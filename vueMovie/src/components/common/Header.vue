@@ -1,30 +1,43 @@
-<template lang="pug">
-     <div class="header">
-    
-     </div>
+<template>
+    <div id="header">
+    <button>首页</button>
+    <h2>
+      movie
+    </h2>
+  </div>
 </template>
-<style>
-@import "../../assets/css/reset.css";
-.header{
-    display: flex;
+
+
+<script>
+    export default {
+    name : 'header',
+    data (){
+      return {}
+    }
+    }
+</script>
+
+
+<style scoped>
+  @import "../../assets/css/reset.css";
+  #header{
     height: 1rem;
-    color : #fff;    
-}
-.header button{
-    width : 1rem;
-    height : 1rem;
-    color:#fff;
-}
-.header h2{
-   flex : 1;
-    text-align: center;
-    text-indent: -1rem;
-    line-height: 1rem;
-  }
-  .header{
+    display: flex;
+    background: rgb(33, 150, 243);
     position: fixed;
-    top: 0;
+    top:0;
     width: 100%;
   }
-
+  #header button{
+    width: 1rem;
+    height: 1rem;
+    color: #fff;
+  }
+  #header h2{
+    flex:1;
+    height: 1rem;
+    color: #fff;
+    text-align: center;
+    margin-left: -1rem;
+  }
 </style>
