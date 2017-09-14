@@ -1,10 +1,8 @@
 <template>
-    <div id="header">
+    <div id="header" :style="{background:$store.state.bgColor}">
     <button>首页</button>
     <h2>
-      <slot>
-        movie
-      </slot>
+    {{$store.state.title}}
     </h2>
   </div>
 </template>
@@ -24,7 +22,6 @@
   #header{
     height: 1rem;
     display: flex;
-    background: rgb(33, 150, 243);
     position: fixed;
     top:0;
     width: 100%;

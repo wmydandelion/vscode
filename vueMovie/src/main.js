@@ -3,15 +3,18 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router'
+import store from './vuex/store'
 
 require('./assets/js/rem');
 require('./assets/css/reset.css');
+Vue.config.productionTip = false
 global.API_PROXY = 'https://bird.ioliu.cn/v1/?url='
 
 /* eslint-disable no-new */
 new Vue({
     el: '#app',
     router,
+    store,
     template: '<App/>',
     components: { App }
 })

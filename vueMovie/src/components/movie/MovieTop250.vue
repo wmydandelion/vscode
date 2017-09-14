@@ -16,6 +16,11 @@
         </p>
       </div>
     </div>
+    <div class="loading" v-show="isShow">
+      <span>
+        <img src="assets/img/loading.gif">
+      </span>
+    </div>
   </div>
 </template>
 
@@ -26,7 +31,8 @@ export default {
   name: 'header',
   data () {
     return {
-      list:[]
+      list:[],
+      isShow : false
     }
   },
   mounted(){
@@ -38,6 +44,7 @@ export default {
       var scrollTop = $(this).scrollTop();
       var dHeight = $(document).height();
       if(windowHeight + scrollTop >= dHeight){
+         _this.isShow = true;
         _this.loadData();
       }
     });
@@ -56,7 +63,6 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-    @import '../../assets/css/reset.css';
 
     .top250{
       margin-top: 2rem;
@@ -81,5 +87,8 @@ export default {
       width: 4.0rem;
       margin-left: 0.6rem;
       border-bottom: 1px #ccc solid;
+    }
+    .loading{
+     text-align: center;
     }
 </style>

@@ -1,29 +1,37 @@
 <template>
-<div id="movie">
+<div id="book">
     <common-header></common-header>
-    <movie-nav></movie-nav>
-    <router-view></router-view>
+    <swipe class="my-swipe">
+        <swipe-item class="item1"></swipe-item>
+        <swipe-item class="item2"></swipe-item>
+        <swipe-item class="item3"></swipe-item>
+    </swipe>
     <common-footer></common-footer>
 </div>
 </template>
 <script>
     import CommonHeader from '@/components/common/Header'
     import CommonFooter from '@/components/common/Footer'
-    import MovieNav from '@/components/movie/MovieNav'
-    import MovieTop250 from '@/components/movie/MovieTop250'
+    import {Swipe,SwipeItem} from 'vue-swipe'
 export default{
     name : 'header',
     data(){
         return {}
+     },
+    mounted(){
+       this.$store.dispatch('changeTitle',['book','rgb(121, 85, 72)']);
     },
     components : {
         CommonHeader,
         CommonFooter,
-        MovieNav,
-        MovieTop250
+        Swipe,
+        SwipeItem
     }
 }
 
-
-
 </script>
+
+
+<style>
+@import '../../assets/css/vue-swipe.css';
+</style>
