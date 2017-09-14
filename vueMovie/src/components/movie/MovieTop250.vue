@@ -44,9 +44,10 @@ export default {
   },
   methods:{
       loadData(){
-      Axios.get(API_PROXY+'https://api.douban.com/v2/movie/top250?count=10&start=0')
+      Axios.get(API_PROXY+'https://api.douban.com/v2/movie/top250?count=10&start='+this.list.length)
             .then((res)=>{
-              this.list = res.data.subjects;
+              this.list = this.list.concat(res.data.subjects);
+              this.isShow = false;
           });
       }
   }
@@ -56,6 +57,7 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
     @import '../../assets/css/reset.css';
+
     .top250{
       margin-top: 2rem;
       margin-bottom: 1rem;

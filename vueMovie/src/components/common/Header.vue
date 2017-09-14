@@ -2,7 +2,9 @@
     <div id="header">
     <button>首页</button>
     <h2>
-      movie
+      <slot>
+        movie
+      </slot>
     </h2>
   </div>
 </template>
@@ -19,7 +21,6 @@
 
 
 <style scoped>
-  @import "../../assets/css/reset.css";
   #header{
     height: 1rem;
     display: flex;

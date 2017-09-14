@@ -1,9 +1,9 @@
 <template>
   <ul id="footer">
-    <li>电影</li>
-    <li>音乐</li>
-    <li>书籍</li>
-    <li>图片</li>
+    <li><router-link to="/movie">电影</router-link></li>
+    <li><router-link to="/music">音乐</router-link></li>
+    <li><router-link to="/book">书籍</router-link></li>
+    <li><router-link to="/photo">图片</router-link></li>
   </ul>
 </template>
 <script>
@@ -16,9 +16,6 @@
 </script>
 
 <style scoped>
-@import "../../assets/css/reset.css";
-
-
  #footer{
     height: 1rem;
     display: flex;
@@ -33,5 +30,11 @@
     text-align: center;
     line-height: 1rem;
   }
-
+  #footer li a{
+   color: #ccc;
+   outline : none;
+  }
+  #footer li a.router-link-active{
+   color: #fff;
+  }
 </style>
