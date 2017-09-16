@@ -1,6 +1,7 @@
 <template>
 <div id="music">
     <common-header></common-header>
+    <router-view></router-view>
     <common-footer></common-footer>
 </div>
 </template>

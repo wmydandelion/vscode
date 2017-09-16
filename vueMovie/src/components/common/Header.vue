@@ -1,6 +1,11 @@
 <template>
     <div id="header" :style="{background:$store.state.bgColor}">
-    <button>首页</button>
+    <slot>
+      <button @click="back">
+        {{$store.state.btn}}
+      </button>
+    </slot>
+   
     <h2>
     {{$store.state.title}}
     </h2>
@@ -13,6 +18,11 @@
     name : 'header',
     data (){
       return {}
+    },
+    methods : {
+      back(){
+        history.go(-1);
+      }
     }
     }
 </script>

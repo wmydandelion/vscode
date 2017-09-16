@@ -1,6 +1,8 @@
 <template>
 <div id="movie">
-    <common-header></common-header>
+    <common-header>
+        <button>首页</button>
+    </common-header>
     <movie-nav></movie-nav>
     <router-view></router-view>
     <common-footer></common-footer>
@@ -16,6 +18,9 @@ export default{
     data(){
         return {}
     },
+    mounted(){
+        this.$store.dispatch('changeTitle',['movie','rgb(33, 150, 243)','首页']);
+        },
     components : {
         CommonHeader,
         CommonFooter,

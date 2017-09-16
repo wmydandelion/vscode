@@ -34,4 +34,30 @@ export default{
 
 <style>
 @import '../../assets/css/vue-swipe.css';
+ .my-swipe {
+    height: 200px;
+    font-size: 30px;
+    text-align: center;
+    margin-top: 1rem;
+  }
+  .my-swipe .mint-swipe-item{
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+  }
+
+
+  .item1{
+    background: url('https://img3.doubanio.com/lpic/s27102925.jpg');
+  }
+  .item2{
+    background: url('https://img3.doubanio.com/lpic/s6989253.jpg');
+  }
+  .item3{
+    background: url('https://img3.doubanio.com/lpic/s24468373.jpg');
+  }
+
+
+
 </style>
