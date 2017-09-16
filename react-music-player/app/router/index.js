@@ -12,7 +12,7 @@ render( <
 );
 if (module.hot) {
     module.hot.accept('./Root', () => {
-        const NewHello = require('./Root').default;
+        const NewRoot = require('./Root').default;
         render( <
             AppContainer >
             <
