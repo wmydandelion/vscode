@@ -10,16 +10,17 @@
 
 <body>
     <script>
-        console.log(-0 == +0);
-        console.log(Object.is(-0, +0));
+        let target = {
+            'a': 1
+        };
+        let origin = {
+            "b": 2,
+            "c": 3
+        };
+        Object.assign(target, origin);
 
-
-        var str = '12';
-        var num = 12;
-        console.log(str == num);
-        console.log(str === num);
-
-        console.log(Object.is(str, num));
+        console.log(target);
+        console.log(origint);
     </script>
 </body>
 
